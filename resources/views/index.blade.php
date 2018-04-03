@@ -23,7 +23,7 @@
                         <<td>
                         	<form methode="post" action="{{ route('posts.destroy', $rs->id) }}">
                         		{{csrf_field()}}
-            					<input name="_method" type="hidden" value="PUT">
+            					<input name="_method" type="hidden" value="DELETE">
                         		<input type="submit" value="Delete" class="btn-xs btn-danger">
                         	</form>
                         </td>
